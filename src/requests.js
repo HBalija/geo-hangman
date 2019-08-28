@@ -1,11 +1,9 @@
-/* eslint-disable no-unused-vars */
 
 const getRandomItem = items => items[Math.floor(Math.random() * items.length)];
 
-
 // async await function
 
-const getCountry = async () => {
+export const getCountry = async () => {
   const response = await fetch('//restcountries.eu/rest/v2/all');
 
   if (response.status === 200) {
@@ -22,7 +20,8 @@ const getCountry = async () => {
 // promise / fetch function
 
 const getCountry = () => {
-  return fetch('//restcountries.eu/rest/v2/all').then(response => {
+  return fetch('//restcount
+    "@nodelib/fs.stat": {ries.eu/rest/v2/all').then(response => {
     if (response.status === 200) {
       return response.json();
     } else {

@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
-
-class GeoHangman {
+export default class GeoHangman {
   constructor(country, remainingGuesses) {
     this.country = country;
     this.word = country.capital.toLowerCase().split('');

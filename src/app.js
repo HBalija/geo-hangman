@@ -1,4 +1,5 @@
-/*   eslint-disable no-undef */
+import { getCountry } from './requests';
+import GeoHangman from './geo-hangman';
 
 const puzzle = document.getElementById('puzzle');
 const guessCount = document.getElementById('guess');
