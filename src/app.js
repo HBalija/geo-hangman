@@ -30,7 +30,7 @@ window.addEventListener('keypress', e => {
 
 const startGame = async () => {
   const country = await getCountry();
-  game = new GeoHangman(country, 3);
+  game = new GeoHangman(country, 5);
   render();
 };
 
